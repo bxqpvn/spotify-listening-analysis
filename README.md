@@ -2,6 +2,8 @@
 
 ![DBeaver](https://img.shields.io/badge/DBeaver-2C8DB3?style=flat&logo=dbeaver&logoColor=white) ![](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) 
 
+![VSCODE](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=plastic)
+
 # SPOTIFY LISTENING ANALYSIS 2025
 
 *This project is a custom Spotify listening analysis based on real Spotify streaming history data.*
