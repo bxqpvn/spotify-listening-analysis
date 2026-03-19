@@ -105,3 +105,18 @@ WHERE end_time >= '2025-01-01'
   AND artist_name IS NOT NULL;
 
 ```
+
+## 3: JSON TO POSTGRESQL 
+
+In this step, I used Python to load all Spotify `.json` files into PostgreSQL.  
+
+The script combines the files into one dataset and inserts the raw data into the `RAW.spotify_events` table.
+
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3c78cd0f-ab12-4d9c-ae58-9e98f24c5108)
+
+>[!IMPORTANT]
+> Before running the script, install the required Python libraries:
+>
+> ```python
+> G:/Python/python.exe -m pip install psycopg2-binary pandas python-dotenv
+> ```
