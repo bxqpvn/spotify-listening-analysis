@@ -179,3 +179,15 @@ Final step: SQL queries. let's have some fun!
 ## Top Days by Minutes Listened
 
 <img width="827" height="352" alt="image" src="https://github.com/user-attachments/assets/ab7f7401-9010-4001-8285-1b5b7058f8fc" />
+
+## Listening Periods
+
+<img width="746" height="340" alt="image" src="https://github.com/user-attachments/assets/a7216172-096a-4291-bc4c-ab56fc85e09a" />
+
+## Most Played Track
+
+<img width="692" height="235" alt="image" src="https://github.com/user-attachments/assets/599bbfba-5934-4403-bf84-ef7d540c42de" />
+
+## Most Skipped Tracks
+
+<img width="627" height="351" alt="image" src="https://github.com/user-attachments/assets/d98ebc9f-89bf-4fa4-927e-b613eda9a362" />
