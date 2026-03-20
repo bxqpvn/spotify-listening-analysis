@@ -108,7 +108,8 @@ WHERE end_time >= '2025-01-01'
 
 ```
 
-## 3: JSON TO POSTGRESQL 
+
+### 3: JSON TO POSTGRESQL 
 
 In this step, I used Python to load all Spotify `.json` files into PostgreSQL.  
 
@@ -122,3 +123,35 @@ The script combines the files into one dataset and inserts the raw data into the
 > ```python
 > G:/Python/python.exe -m pip install psycopg2-binary pandas python-dotenv
 > ```
+
+
+### 4: DATA CHECK & TABLE POPULATION
+
+In this step, I transformed the raw Spotify data into a smaller analysis-ready table.  
+
+**CHECK RAW DATA:**
+
+```sql
+SELECT * FROM raw.spotify_events;
+```
+
+<img width="1415" height="481" alt="check raw data" src="https://github.com/user-attachments/assets/ea106c1a-8ef4-43e0-8dd9-9440dbbd409d" />
+
+
+**POPULATE 2025 PROCESSED TABLE:**
+
+```sql
+INSERT INTO prs.spotify_events_2025 (end_time, artist_name, track_name, ms_played)
+SELECT
+    end_time,
+    artist_name,
+    track_name,
+    ms_played
+FROM RAW.SPOTIFY_EVENTS
+WHERE end_time >= '2025-01-01'
+AND artist_name IS NOT NULL;
+
+SELECT * FROM prs.spotify_events_2025; -- check data has been loaded
+```
+
+<img width="704" height="530" alt="image" src="https://github.com/user-attachments/assets/c62210b5-b18a-49b5-88ba-d6d92d5f347c" />
