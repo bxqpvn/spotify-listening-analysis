@@ -127,7 +127,7 @@ The script combines the files into one dataset and inserts the raw data into the
 
 ### 4: DATA CHECK & TABLE POPULATION
 
-In this step, I transformed the raw Spotify data into a smaller analysis-ready table.  
+I transformed the raw Spotify data into a smaller analysis-ready table.  
 
 **CHECK RAW DATA:**
 
@@ -155,3 +155,27 @@ SELECT * FROM prs.spotify_events_2025; -- check data has been loaded
 ```
 
 <img width="704" height="530" alt="image" src="https://github.com/user-attachments/assets/c62210b5-b18a-49b5-88ba-d6d92d5f347c" />
+
+### 5: SQL ANALYSIS
+
+Final step: SQL queries. let's have some fun!
+
+## Top 5 Tracks by Listening Time
+
+<img width="704" height="404" alt="image" src="https://github.com/user-attachments/assets/c247dfee-7764-48e9-87a5-8de70e57acdf" />
+
+## Total Hours Listened in 2025
+
+<img width="637" height="182" alt="image" src="https://github.com/user-attachments/assets/6e70daf9-eef8-44fc-bdb5-2e22bd16688e" />
+
+## Top Artist by Hours
+
+<img width="658" height="242" alt="image" src="https://github.com/user-attachments/assets/ab665e56-0b4c-4bbb-8006-b90dc0a0ed0a" />
+
+## Most Active Listening Hour
+
+<img width="742" height="256" alt="image" src="https://github.com/user-attachments/assets/c2aac739-63a4-4fc2-b00b-1d3c040730ad" />
+
+## Top Days by Minutes Listened
+
+<img width="827" height="352" alt="image" src="https://github.com/user-attachments/assets/ab7f7401-9010-4001-8285-1b5b7058f8fc" />
